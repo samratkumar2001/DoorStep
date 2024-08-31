@@ -1,0 +1,122 @@
+
+nav {
+    /* background-color: black; */
+    background-image: linear-gradient(to bottom right, white, #5dade2);
+    height: 10vh;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    position: fixed;
+    color: white;
+    z-index: 10000000000000000000000000000000000000000;
+    top: 0;
+    padding: 0;
+}
+
+.links {
+    /* background-color: aqua; */
+    display: flex;
+    width: 50rem;
+    text-decoration: none;
+    margin: auto;
+}
+
+.links label {
+    cursor: pointer;
+    padding-inline: 20px;
+    font-size: 25px;
+}
+
+.links a {
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    color: #1f618d;
+    transition: .5s;
+}
+
+.links a:hover{
+    color: white;
+}
+
+.components {
+    /* background-color: aliceblue; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    /* top: 30%; */
+
+}
+
+.logo {
+    /* background-color: red; */
+    height: 50%;
+    width: 20vh;
+
+    margin: auto;
+}
+
+.logo img {
+    /* background-color: white; */
+    /* border-radius: 10px; */
+    /* padding-inline: 1rem; */
+    height: 100%;
+    width: 100%;
+}
+.cart-logo{
+    color: #1f618d;
+    display: flex;
+    gap: 10%;
+    margin: auto;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart-logo label{
+/* color: red; */
+}
+
+
+.search-box {
+    /* background-color: #5dade2; */
+    height: auto;
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    float: right;
+    margin: auto;
+}
+
+.search-box input {
+    padding: 1%;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.search-icon {
+    height: 15px;
+    margin-left: -2rem;
+}
+
+.components-login-btn {
+    margin: auto;
+    padding: .3rem 2rem;
+    background-color: #1f618d;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    transition: .2s linear;
+}
+.components-login-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #1f618d;
+}
