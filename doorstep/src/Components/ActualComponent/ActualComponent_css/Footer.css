@@ -1,6 +1,4 @@
 .footer {
-    /* height: 40vh; */
-    /* width: 95%; */
     margin-top: 2rem;
     background-color: rgb(13, 48, 72);
     color: #fff;
@@ -10,8 +8,6 @@
 }
 
 .footer-container {
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;

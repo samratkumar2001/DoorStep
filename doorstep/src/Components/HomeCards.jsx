@@ -6,7 +6,7 @@ import HomePopularCard from './ActualComponent/HomePopularCard'
 import HomeSuggestionCard from './ActualComponent/HomeSuggestionCard'
 
 // Import Swiper React components
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -98,30 +98,30 @@ const HomeCards = () => {
   return (
 
     <>
-    {/* Slider Container */}
+      {/* Slider Container */}
       <div className='heading-slider-container'>
         <div className='heading-slider'>
-        <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
-          spaceBetween={0}
-          slidesPerView={1}
-          navigation
-          autoplay={{
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            spaceBetween={0}
+            slidesPerView={1}
+            navigation
+            autoplay={{
               delay: 2000,
               disableOnInteraction: false,
             }}
-          pagination={{ clickable: true }}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide><img src={Slider1} /></SwiperSlide>
-          <SwiperSlide><img src={Slider2} /></SwiperSlide>
-          <SwiperSlide><img src={Slider3} /></SwiperSlide>
-          <SwiperSlide><img src={Slider4} /></SwiperSlide>
-          <SwiperSlide><img src={Slider5} /></SwiperSlide>
-          <SwiperSlide><img src={Slider6} /></SwiperSlide>
-          <SwiperSlide><img src={Slider7} /></SwiperSlide>
-        </Swiper>
+            pagination={{ clickable: true }}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide><img src={Slider1} /></SwiperSlide>
+            <SwiperSlide><img src={Slider2} /></SwiperSlide>
+            <SwiperSlide><img src={Slider3} /></SwiperSlide>
+            <SwiperSlide><img src={Slider4} /></SwiperSlide>
+            <SwiperSlide><img src={Slider5} /></SwiperSlide>
+            <SwiperSlide><img src={Slider6} /></SwiperSlide>
+            <SwiperSlide><img src={Slider7} /></SwiperSlide>
+          </Swiper>
         </div>
 
       </div>
@@ -130,8 +130,9 @@ const HomeCards = () => {
       <hr className='homecards-hr' />
 
       {/* Service Conatiner  */}
-
+      <h1 style={{marginLeft:"20px"}}>Variety Of Services</h1>
       <div className='service-container'>
+
         <div className='services'>
           <img src={CleaningServices} />
           <div>Cleaning Services</div>
@@ -209,7 +210,7 @@ const HomeCards = () => {
 
 
       <hr className='homecards-hr' />
-
+      <h1 style={{marginLeft:"23px"}}>Similar Services</h1>
       {/* Suggestion Conatiner  */}
       <div className='suggestion-container'>
 
@@ -222,6 +223,7 @@ const HomeCards = () => {
           </div>
         </div>
         <div className='suggestion'>
+      
           <div className='suggestion-heading'>Repair</div>
           <div className='three-images'>
             <HomeSuggestionCard img={ComputerRepair} desc={'Computer Repair'} />
@@ -237,6 +239,8 @@ const HomeCards = () => {
             <HomeSuggestionCard img={TutorService} desc={'Tutor Service'} />
           </div>
         </div>
+      
+
         <div className='suggestion'>
           <div className='suggestion-heading'>Frequently Used</div>
           <div className='three-images'>
@@ -245,7 +249,6 @@ const HomeCards = () => {
             <HomeSuggestionCard img={LawncareNeeds} desc={'Lawncare'} />
           </div>
         </div>
-
       </div>
 
       <hr className='homecards-hr' />
@@ -255,14 +258,25 @@ const HomeCards = () => {
       <div className='popular-container1'>
         <div className='popular-heading'>Popular Services</div>
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={50}
-          slidesPerView={4}
+          modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
+          spaceBetween={30}
+          slidesPerView={5}
           navigation
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
           // pagination={{ clickable: true }}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
+          <SwiperSlide><HomePopularCard img={ServicesCarpetCleaning} desc={'Carpet Cleaning'} /></SwiperSlide>
+          <SwiperSlide><HomePopularCard img={ServicesComputerRepair} desc={'Computer Repair'} /></SwiperSlide>
+          <SwiperSlide><HomePopularCard img={ServicesElectrician} desc={'Electrician'} /></SwiperSlide>
+          <SwiperSlide><HomePopularCard img={ServicesEventPlanning} desc={'Event Planning'} /></SwiperSlide>
+          <SwiperSlide><HomePopularCard img={ServicesFloorCleaning} desc={'Floor Cleaning'} /></SwiperSlide>
+          <SwiperSlide><HomePopularCard img={ServicesFitness} desc={'Fitness'} /></SwiperSlide>
+          <SwiperSlide><HomePopularCard img={ServicesGraphicDesign} desc={'Graphic Design'} /></SwiperSlide>
           <SwiperSlide><HomePopularCard img={ServicesCarpetCleaning} desc={'Carpet Cleaning'} /></SwiperSlide>
           <SwiperSlide><HomePopularCard img={ServicesComputerRepair} desc={'Computer Repair'} /></SwiperSlide>
           <SwiperSlide><HomePopularCard img={ServicesElectrician} desc={'Electrician'} /></SwiperSlide>
@@ -284,13 +298,13 @@ const HomeCards = () => {
             navigation
 
             autoplay={{
-              delay: 3000,
+              delay: 1000,
               disableOnInteraction: false,
             }}
 
 
 
-            pagination={{ clickable: true }}
+            // pagination={{ clickable: true }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
           >
@@ -317,7 +331,7 @@ const HomeCards = () => {
 
 
 
-            pagination={{ clickable: true }}
+            // pagination={{ clickable: true }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
           >

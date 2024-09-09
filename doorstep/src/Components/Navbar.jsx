@@ -1,17 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Component_css/Navbar.css'
 import Avatar from '../Images/avatar.png'
 import CustomerSupport from './CustomerSupport'
 import HomeCards from './HomeCards'
-import { NavLink } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import ProfileDropdown from './ProfileDropdown'
+import { NavLink,useNavigate } from 'react-router-dom'
 
 import Logo from '../Images/logo.png'
 import SearchLogo from '../Images/search-b.png'
 
 const Navbar = () => {
     const navigate = useNavigate();
-
+    const [openProfile,setOpenProfie] = useState(false);
     return (
         <div className='Nav-wrapper'>
             <nav>
@@ -32,13 +32,17 @@ const Navbar = () => {
                         <input type='text' placeholder='Search' />
                         <img src={SearchLogo} alt='search' className='search-icon' />
                     </div>
-                    <button className='components-login-btn'>Login</button>
-
+                    <button className='components-login-btn' onClick={() => setOpenProfie((prev) => !prev)}>Login</button>
                 </span>
-            </nav>
+                {
+                    openProfile && <ProfileDropdown/>
 
+                }
+
+            </nav>
+            
         </div>
     )
 }
 
-export default Navbar
+export default Navbar;

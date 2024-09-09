@@ -5,6 +5,8 @@ import CustomerSupport from '../Components/CustomerSupport';
 import Navbar from '../Components/Navbar';
 import Services from '../Components/Services'
 import Cart from '../Components/Cart';
+import ServicesPage from '../Components/ServicesPage';
+import Dashboard from "../Components/Dashboard";
 
 
 const Router = () => {
@@ -18,6 +20,7 @@ const Router = () => {
         <Route path='/customersupport' element={<CustomerSupport />} />
         <Route path='/services' element={<Services />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/dashboard' element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
   )
