@@ -1,59 +1,64 @@
-.services-page {
+.services-page-container {
     max-width: 100%;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .services-page .header h1 {
+   
+  .services-page-container .header-services h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
-  
-  .services-page .header p {
+ 
+  .services-page-container .header-services p {
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 2rem;
   }
   
-  .services-page .services {
+  .services-page-container .services-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
   }
-  
-  .services-page .service-card {
-    background-color: #f0f0f0;
+    
+  .services-page-container .services-card {
+    /* background-color: #fff; */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     text-align: left;
     overflow: hidden;
+    padding-right: 12vh;
   }
-  .services-page .service-card .try{
+  .services-page-container .services-card .try{
     padding: 1.5rem;  
   }
-  .services-page .service-card .try h2 {
+  
+  .services-page-container .services-card .try h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     margin-top: -20px;
     font-family: "Outfit", sans-serif;
   }
   
-  .services-page .service-card p {
-    color: #666;
+  .services-page-container .services-card p {
+    color: #080808b0;
     font-size: 1.1rem;
     margin-top: -10px;
   }
   
   
-  .service-card {
-    position: relative; /* Needed to position the button absolutely within this container */
+  .services-card {
+    position: relative; /*Needed to position the button absolutely within this container */
     
   }
-   
-  /* App button */
   
+
+
   .button-85 {
     padding: 0.6em 2em;
     border: none;
@@ -61,15 +66,15 @@
     color: rgb(255, 255, 255);
     background: #111;
     cursor: pointer;
-    position: absolute; /* Position absolutely within the card */
-    bottom: 10px; /* Position 10px from the bottom */
-    right: 10px; /* Position 10px from the right */
+    position: absolute;   /*relative */
+    bottom: 10px; 
+    right: 10px; 
     z-index: 0;
     border-radius: 10px;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
+  } 
    
   
   
@@ -98,10 +103,10 @@
     height: calc(100% + 4px);
     animation: glowing-button-85 20s linear infinite;
     transition: opacity 0.3s ease-in-out;
-    border-radius: 10px;
+    border-radius: 10px; 
   }
   
-  @keyframes glowing-button-85 {
+   @keyframes glowing-button-85 {
     0% {
       background-position: 0 0;
     }
@@ -111,7 +116,7 @@
     100% {
       background-position: 0 0;
     }
-  }
+  } 
   
   .button-85:after {
     z-index: -1;
@@ -123,17 +128,11 @@
     left: 0;
     top: 0;
     border-radius: 10px;
-  }
-  
-  /* card-image */
+  }  
+ 
+
   .card-image{
     width: 100%;
     position: sticky;
   }
-  .popular-services{
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    margin: 5%;
-    width: 100%;
-  }
+  
