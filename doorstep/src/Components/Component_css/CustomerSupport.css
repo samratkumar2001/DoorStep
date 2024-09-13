@@ -12,7 +12,8 @@ html {
 }
 
 header {
-    background-color: #34495e;
+    /* background-color: #34495e; */
+    background-color: #0e0909;
     /* background: transparent; */
     position: fixed;
     height: 50px;
@@ -21,7 +22,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
-    top: 10%;
+    top: 8.5%;
 }
 
 header a {
