@@ -30,7 +30,7 @@
 
 .heading-slider img{
     object-fit: cover;
-    height: 45vh;
+    height: 47vh;
     width: 100%;
 }
 
@@ -59,7 +59,6 @@
     text-align: center;
     align-items: center;
     margin: auto;
-    
 }
 
 .services img {
@@ -67,7 +66,7 @@
     width: 50px;
     border: 1px solid gray;
     border-radius: 10px;
-    padding: 0.5rem;
+    padding: 0.7rem;
     transition: all 0.3s ease-in-out;
     
 }
@@ -88,22 +87,21 @@
     height: auto;
     width: 100%;
     margin-inline: auto;
-    /* align-items: center;
-    justify-content: center; */
+    padding: 0% 1% 2% 1%;
     margin-top: 2rem;
     display: grid;
     grid: auto / auto auto auto;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .suggestion {
     /* background-color:bisque; */
     /* border: 2px solid gray; */
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
-    height: 30vh;
-    width: 95vh;
+    height: 90%;
+    width: 90%;
     margin: 3vh;
 
 }
@@ -127,6 +125,7 @@
     padding-top: 3vh;
     align-items: center;
     text-align: center;
+    transition: all 0.7s ease-out-in
 }
 
 
