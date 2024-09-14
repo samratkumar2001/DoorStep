@@ -1,8 +1,13 @@
 .popular-cards {
-    /* background-color: #5dade2; */
+    background-color: #5dade2;
     background-image: linear-gradient(to bottom right, white, #5dade2);
-    height: 45vh;
-    width: 45vh;
+    
+    
+    /* background-image: linear-gradient( 290.7deg,  rgba(133,255,159,1) 2.3%, rgba(0,172,249,1) 100.2% ); */
+
+    /* background-image: linear-gradient( 108.4deg,  rgba(10,255,194,1) 11.2%, rgba(0,175,226,1) 88.6% ); */
+    height: 40vh;
+    width: 35vh;
     margin: auto;
     border-radius: 10px;
     overflow: hidden;
