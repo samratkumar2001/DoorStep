@@ -119,6 +119,6 @@ nav {
 }
 .components-login-btn:hover{
     cursor: pointer;
-    background-color: white;
-    color: #0bec7c;
+    background-color: #0bec7c;
+    color: white;
 }

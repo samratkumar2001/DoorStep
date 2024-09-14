@@ -7,7 +7,7 @@ import Card from "../Components/ActualComponent/Card";
 import HomeSuggestionCard from './ActualComponent/HomeSuggestionCard'
 
 // Import Swiper React components
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -132,7 +132,7 @@ const HomeCards = () => {
       <hr className='homecards-hr' />
 
       {/* Service Conatiner  */}
-      <h1 style={{marginLeft:"20px"}}>Variety Of Services</h1>
+      <h1 style={{ marginLeft: "20px" }}>Variety Of Services</h1>
       <div className='service-container'>
 
         <div className='services'>
@@ -212,7 +212,7 @@ const HomeCards = () => {
 
 
       <hr className='homecards-hr' />
-      <h1 style={{marginLeft:"23px"}}>Similar Services</h1>
+      <h1 style={{ marginLeft: "23px" }}>Similar Services</h1>
       {/* Suggestion Conatiner  */}
       <div className='suggestion-container'>
 
@@ -225,7 +225,7 @@ const HomeCards = () => {
           </div>
         </div>
         <div className='suggestion'>
-      
+
           <div className='suggestion-heading'>Repair</div>
           <div className='three-images'>
             <HomeSuggestionCard img={ComputerRepair} desc={'Computer Repair'} />
@@ -241,7 +241,7 @@ const HomeCards = () => {
             <HomeSuggestionCard img={TutorService} desc={'Tutor Service'} />
           </div>
         </div>
-      
+
 
         <div className='suggestion'>
           <div className='suggestion-heading'>Frequently Used</div>
@@ -258,9 +258,9 @@ const HomeCards = () => {
       {/* Popular Section */}
 
       <div className='popular-container1'>
-      <h1 style={{marginLeft:"3px", paddingBottom:"4vh"}}>Popular Services</h1>
+        <h1 style={{ marginLeft: "3px", paddingBottom: "4vh" }}>Popular Services</h1>
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={30}
           slidesPerView={5}
           navigation
@@ -270,25 +270,25 @@ const HomeCards = () => {
           }}
           speed={600}
           breakpoints={{
-            
+
             320: {
-              slidesPerView: 1.2, 
+              slidesPerView: 1.2,
             },
-            
+
             480: {
-              slidesPerView: 1.5, 
+              slidesPerView: 1.5,
             },
-            
+
             640: {
-              slidesPerView: 2.5, 
+              slidesPerView: 2.5,
             },
-            
+
             768: {
-              slidesPerView: 3.5, 
+              slidesPerView: 3.5,
             },
-            
+
             1024: {
-              slidesPerView: 5, 
+              slidesPerView: 5,
             },
           }}
 
@@ -296,20 +296,20 @@ const HomeCards = () => {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-         <SwiperSlide><Card  imageSrc="/images/Personal Chef.jpg" name = "Personal Chef" desc = "Enjoy gourmet meals prepared by a professional chef at home."/></SwiperSlide>
-          <SwiperSlide><Card  imageSrc="/images/Lawn Care Services.jpg" name = "Lawn Care Services" desc = "Keep your lawn healthy and well-maintained."/></SwiperSlide>
-          <SwiperSlide><Card  imageSrc="/images/Painting Services.jpg" name = "Painting Services" desc = "Intexterior painting services for homes and businesses."/></SwiperSlide>
-          <SwiperSlide><Card imageSrc="/images/Event Planning.jpg" name = "Event Planning" desc = "Plan and organize memorable events with professional assistance."/></SwiperSlide>
-          <SwiperSlide><Card  imageSrc="/images/Tutoring Services.jpg" name = "Tutoring Services" desc = "Personalized tutoring to help you excel academically."/></SwiperSlide>
-          <SwiperSlide><Card  imageSrc="/images/Fitness Training.jpg" name = "Fitness Training" desc = "Personalized fitness plans and training sessions."/></SwiperSlide>
-          <SwiperSlide><Card  imageSrc="/images/Legal Services.jpg" name = "Legal Services" desc = "Legal advice and services from experienced professionals."/></SwiperSlide>
-          <SwiperSlide><Card imageSrc="/images/Yoga Classes.jpg" name = "Yoga Classes" desc = "Practice yoga and improve your physical and mental well-being."/></SwiperSlide>
-          <SwiperSlide><Card  imageSrc="/images/Car Repair Services.jpg" name = "Car Repair Services" desc = "Expert repair and maintenance for your vehicle."/></SwiperSlide>
-          <SwiperSlide><Card  imageSrc="/images/Music Lessons.jpg" name = "Music Lessons" desc = "Learn to play an instrument or improve your musical skills."/></SwiperSlide>
-          <SwiperSlide><Card imageSrc="/images/Carpet Cleaning.jpg" name = "Carpet Cleaning" desc = "Deep cleaning solutions for carpets and rugs."/></SwiperSlide>
-          <SwiperSlide><Card  imageSrc="/images/Personal Stylist.jpg" name = "Personal Stylist" desc = "Receive personalized fashion advice and styling services."/></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Personal Chef.jpg" name="Personal Chef" desc="Enjoy gourmet meals prepared by a professional chef at home." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Lawn Care Services.jpg" name="Lawn Care Services" desc="Keep your lawn healthy and well-maintained." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Painting Services.jpg" name="Painting Services" desc="Intexterior painting services for homes and businesses." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Event Planning.jpg" name="Event Planning" desc="Plan and organize memorable events with professional assistance." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Tutoring Services.jpg" name="Tutoring Services" desc="Personalized tutoring to help you excel academically." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Fitness Training.jpg" name="Fitness Training" desc="Personalized fitness plans and training sessions." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Legal Services.jpg" name="Legal Services" desc="Legal advice and services from experienced professionals." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Yoga Classes.jpg" name="Yoga Classes" desc="Practice yoga and improve your physical and mental well-being." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Car Repair Services.jpg" name="Car Repair Services" desc="Expert repair and maintenance for your vehicle." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Music Lessons.jpg" name="Music Lessons" desc="Learn to play an instrument or improve your musical skills." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Carpet Cleaning.jpg" name="Carpet Cleaning" desc="Deep cleaning solutions for carpets and rugs." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Personal Stylist.jpg" name="Personal Stylist" desc="Receive personalized fashion advice and styling services." /></SwiperSlide>
 
-          
+
 
           {/* <SwiperSlide><HomePopularCard img={ServicesComputerRepair} desc={'Computer Repair'} /></SwiperSlide>
           <SwiperSlide><HomePopularCard img={ServicesElectrician} desc={'Electrician'} /></SwiperSlide>
@@ -388,6 +388,7 @@ const HomeCards = () => {
 
 
       </div>
+
 
 
 
