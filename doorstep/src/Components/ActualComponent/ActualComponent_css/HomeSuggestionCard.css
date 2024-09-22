@@ -1,0 +1,17 @@
+.HomeSuggestionCard-container img{
+    width: 53%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.HomeSuggestionCard-container img:hover{
+    transform: scale(1.1);
+    transition: transform 0.6s ease;
+}
+
+.suggestion-font{
+    padding: 10px;
+}
