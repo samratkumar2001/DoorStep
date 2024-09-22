@@ -23,7 +23,6 @@
 }
 
 
-/* Pop-up Box CSS */
 
 .btn-modal{
     cursor: pointer;
@@ -52,9 +51,7 @@
     /* transform: translate(-50%, -50%); */
 }
 
-.modal-content{
 
-}
 
 .close-modal-btn{
     position: absolute;
@@ -81,17 +78,11 @@
 
 
 .popup-box {
-    /* background-color: #1f618d; */
     height: 60vh;
     width: 100vh;
     margin-top: 20rem;
-    /* margin: auto; */
     position: absolute;
-    /* left: 27%; */
-    /* display: flex; */
-    /* display: grid; */
-    /* z-index: -1000000000000000; */
-
+   
 }
 .popup-box-btn{
     position: absolute;
@@ -111,7 +102,6 @@
 .popup-box-btn:hover{
     cursor: pointer;
     background-color: #5dade2;
-    /* color: #1f618d; */
     box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.375);
 }
 

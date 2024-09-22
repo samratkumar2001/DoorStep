@@ -5,9 +5,17 @@ import SettingsIcon from "../Images/settingsIcon.png";
 import LogoutIcon from "../Images/logoutIcon.png";
 import DashboardIcon from "../Images/dashboardIcon.png";
 import CartIcon from "../Images/cartIcon.png";
-
+import { Link } from 'react-router-dom';
 import CustomersupportIcon from "../Images/cussupportIcon.png";
 const ProfileDropdown = () => {
+    const handleLogout = () => {
+        // Remove login from localStorage
+        localStorage.removeItem('login');
+        window.alert("Logged Out");
+        
+        // Redirect to login page
+        navigate('/signin');
+      };
     return (
         <div className='dropDown-container'>
             <ul className='dropDown-item-container'>
@@ -17,7 +25,7 @@ const ProfileDropdown = () => {
                 </div>
                 <div className="dropDownItem">
                     <img src={CartIcon} alt='' />
-                    <li>Cart</li>
+                    <li><Link to="/cart">Cart</Link></li>
                 </div>
                 <div className="dropDownItem">
                     <img src={DashboardIcon} alt='' />
@@ -33,7 +41,7 @@ const ProfileDropdown = () => {
                 </div>
                 <div className="dropDownItem">
                     <img src={LogoutIcon} alt='' />
-                    <li>Logout</li>
+                    <li><Link onClick={handleLogout} to="/">Logout</Link></li>
                 </div>
             </ul>
         </div>

@@ -2,30 +2,32 @@
     margin: 0;
     padding: 0;
 }
+    body {
+        overflow-x: hidden;
+      }
 
 .homecards-hr {
     /* margin-top: 1rem; */
     margin-bottom: 1rem;
     width: 100%;
     border-bottom: 0.1px solid black;
+    margin: auto;
 }
 
 .heading-slider-container{
-    /* background-color: aqua; */
     height: 50vh;
     width: 100%;
     margin-top: 5rem;
     align-items: center;
     display: flex;
+    margin: auto;
 }
 
 .heading-slider{
-    /* background-color: red; */
     height: 100%;
     width: 100%;
     align-items: center;
-    /* margin-inline: .5rem; */
-    /* margin-left: 5%; */
+    
 }
 
 .heading-slider img{
@@ -33,27 +35,26 @@
     height: 47vh;
     width: 100%;
 }
-
-
-
-
+.service-cont{
+    padding: 0px 25px;
+}
 .service-container {
-    /* background-color: red; */
     height: auto;
     width: 100%;
     margin-top: 3rem;
     margin-bottom: 3rem;
     display: grid;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 5%;
+    grid-row-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     text-align: center;
     align-items: center;
     align-content: center;
+    object-fit: cover;
+    
 }
 
 .services {
-    /* background-color: aqua; */
     height: auto;
     width: 100px;
     text-align: center;
@@ -83,7 +84,6 @@
 }
 
 .suggestion-container {
-    /* background-color: red; */
     height: auto;
     width: 100%;
     margin-inline: auto;
@@ -92,18 +92,16 @@
     display: grid;
     grid: auto / auto auto auto;
     grid-gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
+    
 }
 
 .suggestion {
-    /* background-color:bisque; */
-    /* border: 2px solid gray; */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
     border-radius: 10px;
     height: 90%;
     width: 90%;
     margin: 3vh;
-
 }
 .test{
     display: flex;
@@ -113,13 +111,12 @@
     font-weight: 500;
     font-family: "Outfit", sans-serif;
     padding-inline: 20px;
-    padding-top: 10px;
+    padding-top: 10px; 
 }
 
 .three-images {
-    /* background-color: rgb(0, 255, 170); */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;  */
     height: auto;
     width: auto;
     padding-top: 2vh;
@@ -140,7 +137,6 @@
 }
 
 .popular-container1 {
-    /* background-color: red; */
     margin-top: 20px;
     height: auto;
     width: 95%;
@@ -173,7 +169,6 @@
 
 .bisection-left,
 .bisection-right {
-    /* background-color: red; */
     width: 40%;
     border: 1px solid black;
     margin: auto;
