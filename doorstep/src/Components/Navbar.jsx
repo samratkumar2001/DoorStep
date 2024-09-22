@@ -5,13 +5,15 @@ import CustomerSupport from './CustomerSupport'
 import HomeCards from './HomeCards'
 import ProfileDropdown from './ProfileDropdown'
 import { NavLink,useNavigate } from 'react-router-dom'
-
 import Logo from '../Images/logo.png'
 import SearchLogo from '../Images/search-b.png'
+
+
 
 const Navbar = () => {
     const navigate = useNavigate();
     const [openProfile,setOpenProfie] = useState(false);
+
     return (
         <div className='Nav-wrapper'>
             <nav>
@@ -20,12 +22,13 @@ const Navbar = () => {
                         <img src={Logo} />
                     </div>
                     <div className='links'>
-                        <label><NavLink to='/'>Home</NavLink></label>
+                        <label><NavLink to='/home'>Home</NavLink></label>
                         <label><NavLink to='/services'>Services</NavLink></label>
-                        <label><NavLink to='/customersupport'>Customer Support</NavLink></label>
+                        <label><NavLink to='/customersupport'>Support</NavLink></label>
+                        <label><NavLink to='/customersupport'>Seller</NavLink></label>
                     </div>
                     <div className='cart-logo' onClick={() => navigate('/cart')}>
-                        <i class="fa-solid fa-cart-shopping "></i>
+                        <i className="fa-solid fa-cart-shopping "></i>
                         <label>4</label> 
                     </div>
                     <div className='search-box'>

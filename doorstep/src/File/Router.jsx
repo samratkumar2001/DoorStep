@@ -7,22 +7,31 @@ import Services from '../Components/Services'
 import Cart from '../Components/Cart';
 import ServicesPage from '../Components/ServicesPage';
 import Dashboard from "../Components/Dashboard";
+import LogIn from "../Components/LogIn.jsx";
+import LogUp from "../Components/LogUp.jsx";
 
+import Protected from '../Components/Protected.jsx';
 
 const Router = () => {
   return (
+
     <BrowserRouter>
-
-        <Navbar />
-
+      <Navbar />
       <Routes>
-        <Route path='/' element={<HomeCards />} />
+
+
+        <Route path='/home' element={<Protected Component={HomeCards} />} />
+
         <Route path='/customersupport' element={<CustomerSupport />} />
-        <Route path='/services' element={<ServicesPage />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/services' element={<Protected Component={ServicesPage} />} />
+        <Route path='/cart' element={<Protected Component={Cart} />} />
+        <Route path='/dashboard' element={<Protected Component={Dashboard} />} />
+        <Route path='/' element={<LogIn />} />
+        <Route path='/logup' element={<LogUp />} />
       </Routes>
     </BrowserRouter>
+
+
   )
 }
 

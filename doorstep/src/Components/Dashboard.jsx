@@ -3,15 +3,14 @@ import "../Components/Component_css/Dashboard.css";
 import ProfileIcon from "../Images/profileIcon.png";
 import HomeIcon from "../Images/home_icon.png";
 const Dashboard = () => {
-     // Prevent default scroll behavior on click
      const handleNavigationClick = (event) => {
-        event.preventDefault(); // Prevent the default anchor click behavior
-        // Perform other actions, like showing or hiding a section
+        event.preventDefault(); 
+        
     };
     return (
         <>
             <div className='dash-container'>
-                {/* <h3 style={{ marginLeft: "50%" }}>Dashboard</h3> */}
+               
                 <div className='dash-inner-container'>
                     <div className="side-nav">
                         <ul className='side-nav-options'>
@@ -29,7 +28,7 @@ const Dashboard = () => {
                     <div className="dash-home">
                         <ul>
                             <img src={HomeIcon} alt='' />
-                            <li><a href='/'>Home/</a></li>
+                            <li><a href='/home'>Home/</a></li>
                             <li><a href='/dashboard'>Dashboard</a></li>
                         </ul>
                     </div>

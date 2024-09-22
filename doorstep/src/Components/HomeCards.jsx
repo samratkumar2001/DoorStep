@@ -132,7 +132,8 @@ const HomeCards = () => {
       <hr className='homecards-hr' />
 
       {/* Service Conatiner  */}
-      <h1 style={{ marginLeft: "20px" }}>Variety Of Services</h1>
+      <h1 style={{ marginLeft: "20px", marginTop:"20px"}}>Variety Of Services</h1>
+      <div className="service-cont">
       <div className='service-container'>
 
         <div className='services'>
@@ -207,12 +208,12 @@ const HomeCards = () => {
           <img src={MoreServices} />
           <div>More..</div>
         </div>
-
+        </div>
       </div>
 
 
       <hr className='homecards-hr' />
-      <h1 style={{ marginLeft: "23px" }}>Similar Services</h1>
+      <h1 style={{ marginLeft: "23px", marginTop:"20px"}}>Similar Services</h1>
       {/* Suggestion Conatiner  */}
       <div className='suggestion-container'>
 
@@ -257,7 +258,7 @@ const HomeCards = () => {
 
       {/* Popular Section */}
 
-      <div className='popular-container1'>
+      <div className='popular-container1'style={{ marginTop:"20px"}}>
         <h1 style={{ marginLeft: "3px", paddingBottom: "4vh" }}>Popular Services</h1>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -309,21 +310,6 @@ const HomeCards = () => {
           <SwiperSlide><Card imageSrc="/images/Carpet Cleaning.jpg" name="Carpet Cleaning" desc="Deep cleaning solutions for carpets and rugs." /></SwiperSlide>
           <SwiperSlide><Card imageSrc="/images/Personal Stylist.jpg" name="Personal Stylist" desc="Receive personalized fashion advice and styling services." /></SwiperSlide>
 
-
-
-          {/* <SwiperSlide><HomePopularCard img={ServicesComputerRepair} desc={'Computer Repair'} /></SwiperSlide>
-          <SwiperSlide><HomePopularCard img={ServicesElectrician} desc={'Electrician'} /></SwiperSlide>
-          <SwiperSlide><HomePopularCard img={ServicesEventPlanning} desc={'Event Planning'} /></SwiperSlide>
-          <SwiperSlide><HomePopularCard img={ServicesFloorCleaning} desc={'Floor Cleaning'} /></SwiperSlide>
-          <SwiperSlide><HomePopularCard img={ServicesFitness} desc={'Fitness'} /></SwiperSlide>
-          <SwiperSlide><HomePopularCard img={ServicesGraphicDesign} desc={'Graphic Design'} /></SwiperSlide>
-          <SwiperSlide><HomePopularCard img={ServicesCarpetCleaning} desc={'Carpet Cleaning'} /></SwiperSlide>
-          <SwiperSlide><HomePopularCard img={ServicesComputerRepair} desc={'Computer Repair'} /></SwiperSlide>
-          <SwiperSlide><HomePopularCard img={ServicesElectrician} desc={'Electrician'} /></SwiperSlide>
-          <SwiperSlide><HomePopularCard img={ServicesEventPlanning} desc={'Event Planning'} /></SwiperSlide>
-          <SwiperSlide><HomePopularCard img={ServicesFloorCleaning} desc={'Floor Cleaning'} /></SwiperSlide>
-          <SwiperSlide><HomePopularCard img={ServicesFitness} desc={'Fitness'} /></SwiperSlide>
-          <SwiperSlide><HomePopularCard img={ServicesGraphicDesign} desc={'Graphic Design'} /></SwiperSlide> */}
         </Swiper>
       </div>
 

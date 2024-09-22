@@ -80,7 +80,7 @@ section {
 
 }
 
-.call, .cha {
+.call, .chat {
     display: grid;
 }
 
@@ -91,6 +91,11 @@ section {
 
 .contact label {
     font-size: 20px;
+}
+
+.chat label {
+    font-size: 20px;
+    padding: 0px 1.5rem;
 }
 
 .call i,
