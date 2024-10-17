@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Card from "../Components/ActualComponent/Card.jsx";
-import "../Components/ServicesPage.css";
+import "../Components/Component_css/ServicesPage.css";
 import PopupCard from './ActualComponent/PopupCard.jsx';
 import Plumbing from "/images/plumbing.jpg"
 import Electrician from "/images/Electrician Services.jpg"

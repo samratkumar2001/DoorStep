@@ -20,11 +20,7 @@ import 'swiper/css/scrollbar';
 
 // Import images
 
-import Plumber from '../Images/Plumber.jpg'
-import Electrician from '../Images/Electrician.jpg'
-import Fitness from '../Images/Fitness.jpg'
-import Handyman from '../Images/Handyman.jpg'
-import Photography from '../Images/Photography.jpg'
+
 import CleaningServices from '../Images/Cleaning-Services.png'
 import CarpetcleaningServices from '../Images/Carpetcleaning-Services.png'
 import ComputerrepairServices from '../Images/Computerrepair-Services.png'
@@ -55,43 +51,6 @@ import TutorService from '../Images/Tutor-Service.jpg'
 import ElectricalNeeds from '../Images/Electrical-Needs.jpg'
 import BodymessageNeeds from '../Images/Bodymessage-Needs.jpg'
 import LawncareNeeds from '../Images/Lawncare-Needs.jpg'
-import HousecleaningCards from '../Images/Housecleaning-Cards.jpg'
-import PhotoshootCards from '../Images/Photoshoot-Cards.jpg'
-import YogaCards from '../Images/Yoga-Cards.jpg'
-import ContactusCover from '../Images/Contactus-Cover.png'
-
-// import Slider1 from '../Images/Slider1.png'
-// import Slider2 from '../Images/Slider2.png'
-// import Slider3 from '../Images/Slider3.png'
-// import Slider4 from '../Images/Slider4.png'
-// import Slider5 from '../Images/Slider5.png'
-// import Slider6 from '../Images/Slider6.png'
-// import Slider7 from '../Images/Slider7.png'
-
-import ServicesCarpetCleaning from '../Images/Services-CarpetCleaning.jpg'
-import ServicesFloorCleaning from '../Images/Services-FloorCleaning.jpg'
-import ServicesComputerRepair from '../Images/Services-ComputerRepair.jpg'
-import ServicesElectrician from '../Images/Services-Electrician.jpg'
-import ServicesEventPlanning from '../Images/Services-EventPlanning.jpg'
-import ServicesFitness from '../Images/Services-Fitness.jpg'
-import ServicesGraphicDesign from '../Images/Services-GraphicDesign.jpg'
-
-import ServicesHandyman from '../Images/Services-Handyman.jpg'
-import ServicesInteriorDesign from '../Images/Services-InteriorDesign.jpg'
-import ServicesLawncare from '../Images/Services-Lawncare.jpg'
-import ServicesLegalServices from '../Images/Services-LegalServices.jpg'
-import ServicesMessageTherapy from '../Images/Services-MessageTherapy.jpg'
-import ServicesMovingServices from '../Images/Services-MovingServices.jpg'
-import ServicesPhotography from '../Images/Services-Photography.jpg'
-import ServicesPainting from '../Images/Services-Painting.jpg'
-import ServicesPlumbing from '../Images/Services-Plumbing.jpg'
-
-
-
-
-
-
-
 
 
 const HomeCards = () => {
@@ -313,10 +272,10 @@ const HomeCards = () => {
         </Swiper>
       </div>
 
-      <hr className='homecards-hr' />
+      {/* <hr className='homecards-hr' /> */}
 
-      <div className='bisection'>
-        <div className='bisection-left'>
+      {/* <div className='bisection'> */}
+        {/* <div className='bisection-left'>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={0}
@@ -326,14 +285,14 @@ const HomeCards = () => {
             autoplay={{
               delay: 1000,
               disableOnInteraction: false,
-            }}
+            }} */}
 
 
 
-            // pagination={{ clickable: true }}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
+            {/* // pagination={{ clickable: true }}
+          //   onSlideChange={() => console.log('slide change')}
+          //   onSwiper={(swiper) => console.log(swiper)} */}
+          {/* > */}
             {/* <SwiperSlide><HomePopularCard img={ServicesHandyman} desc={'Handyman'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesLegalServices} desc={'Legal Services'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={HousecleaningCards} desc={'House Cleaning'} /></SwiperSlide>
@@ -341,9 +300,9 @@ const HomeCards = () => {
             <SwiperSlide><HomePopularCard img={ServicesComputerRepair} desc={'ComputerRepair'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={HousecleaningCards} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesMessageTherapy} desc={'Message Therapy'} /></SwiperSlide> */}
-          </Swiper>
-        </div>
-        <div className='bisection-right'>
+          {/* </Swiper>
+        </div> */}
+        {/* <div className='bisection-right'>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={0}
@@ -353,14 +312,14 @@ const HomeCards = () => {
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
-            }}
+            }} */}
 
 
 
-            // pagination={{ clickable: true }}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
+            {/* // pagination={{ clickable: true }}
+          //   onSlideChange={() => console.log('slide change')}
+          //   onSwiper={(swiper) => console.log(swiper)} */}
+          {/* > */}
             {/* <SwiperSlide><HomePopularCard img={ServicesInteriorDesign} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesPlumbing} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesMovingServices} desc={'House Cleaning'} /></SwiperSlide>
@@ -368,12 +327,12 @@ const HomeCards = () => {
             <SwiperSlide><HomePopularCard img={ServicesPainting} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={HousecleaningCards} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesElectrician} desc={'House Cleaning'} /></SwiperSlide> */}
-          </Swiper>
-        </div>
+          {/* </Swiper> */}
+        {/* </div> */}
 
 
 
-      </div>
+      {/* </div> */}
 
 
 

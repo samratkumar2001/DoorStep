@@ -1,10 +1,12 @@
 .HomeSuggestionCard-container img{
-    width: 53%;
+    max-width: 53%;
     height: auto;
     margin: auto;
     border-radius: 10px;
     object-fit: cover;
     cursor: pointer;
+
+    
 }
 
 .HomeSuggestionCard-container img:hover{

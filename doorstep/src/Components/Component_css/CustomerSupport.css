@@ -288,7 +288,7 @@ section {
 .review-submit-container {
     font-family: "Outfit", sans-serif;
     /* background-color: red; */
-    background-image: url('C:\Users\samra\OneDrive\Desktop\MERN\doorstep\src\Images\ReviewBGimage.jpg');
+    background-image: url('./images/reviewImg.jpeg');
     height: 60vh;
     width: 60%;
     margin-inline: auto;
@@ -320,13 +320,20 @@ section {
     margin: .5rem 0;
     padding-top: .5rem ;
     border: none;
-    border-style: inset;
     outline: none;
     border-radius: 5px;
+    background-color: white;
+    height: 3vh;
+    font-size: 1.7vh;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
 
 .review-submit-form input::placeholder{
-    padding-left: .5rem;
+    padding-left: .5rem ;
+    padding-bottom: .5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -345,15 +352,17 @@ section {
     border: none;
     padding: 15px;
     border-radius: 15px;
-    background-color: #f5b7b1;
+    background-color: white; ;
     color: black;
     font-size: 15px;
     transition: .5s;
 }
 
 .review-submit-button:hover {
-    background-color:#e74c3c;
-    color: white;
+    /* background-color:rgb(0, 255, 153); */
+    background: #5EDDCB;
+    background: linear-gradient(180deg, #07e98b, #00e1e9);
+    color: whitesmoke;
 
     cursor: pointer;
 }
