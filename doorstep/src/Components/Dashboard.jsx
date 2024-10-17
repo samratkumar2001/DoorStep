@@ -1,6 +1,6 @@
 import React from 'react';
 import "../Components/Component_css/Dashboard.css";
-import ProfileIcon from "../Images/profileIcon.png";
+// import ProfileIcon from "../Images/profileIcon.png";
 import HomeIcon from "../Images/home_icon.png";
 const Dashboard = () => {
      const handleNavigationClick = (event) => {
@@ -36,7 +36,7 @@ const Dashboard = () => {
                         <div className="left-small-box">
                             <div className="box">
                                 <h3>Total Users</h3>
-                                <img src={ProfileIcon} alt='icon' />
+                                <img src={'/images/profileIcon.png'} alt='icon' />
                                 <span>Active Users: 100</span>
                                 <div className='growth'>
                                     <span>+ 98%</span>
@@ -46,7 +46,7 @@ const Dashboard = () => {
                             </div>
                             <div className="box">
                                 <h3>Total Sales</h3>
-                                <img src={ProfileIcon} alt='icon' />
+                                <img src={'./images/totalSales.png'} alt='icon' />
                                 <span>Total Sales: ₹100</span>
                                 <div className='growth'>
                                     <span>+ 81%</span>
@@ -55,7 +55,7 @@ const Dashboard = () => {
                             </div>
                             <div className="box">
                                 <h3>Available Products</h3>
-                                <img src={ProfileIcon} alt='icon' />
+                                <img src={'./images/product.png'} alt='icon' />
                                 <span>Products Available: 10</span>
                                 <div className='growth'>
                                     <span>-98%</span>
@@ -64,7 +64,7 @@ const Dashboard = () => {
                             </div>
                             <div className="box">
                                 <h3>Return Products</h3>
-                                <img src={ProfileIcon} alt='icon' />
+                                <img src={'./images/return.png'} alt='icon' />
                                 <span>Return: 19</span>
                                 <div className='growth'>
                                     <span>- 98%</span>
@@ -73,7 +73,7 @@ const Dashboard = () => {
                             </div>
                             <div className="box">
                                 <h3>Invoices</h3>
-                                <img src={ProfileIcon} alt='icon' />
+                                <img src={'./images/bill.png'} alt='icon' />
                                 <span>Invoice Generated: 1000</span>
                                 <div className='growth'>
                                     <span>+ 98%</span>
@@ -82,7 +82,7 @@ const Dashboard = () => {
                             </div>
                             <div className="box">
                                 <h3>Customer Query</h3>
-                                <img src={ProfileIcon} alt='icon' />
+                                <img src={'./images/technical-support.png'} alt='icon' />
                                 <span>Query Request: 100</span>
                                 <div className='growth'>
                                     <span>+ 9%</span>

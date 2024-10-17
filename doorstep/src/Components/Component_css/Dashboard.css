@@ -197,7 +197,9 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(8, 241, 230);
+    /* background-color: rgb(8, 241, 230); */
+    background: #5EDDCB;
+    background: linear-gradient(180deg, #07e98b, #00e1e9);
     width: 15px;
     margin:15px auto;
     cursor: pointer;

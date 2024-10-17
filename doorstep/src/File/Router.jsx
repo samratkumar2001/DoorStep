@@ -11,6 +11,8 @@ import LogIn from "../Components/LogIn.jsx";
 import LogUp from "../Components/LogUp.jsx";
 
 import Protected from '../Components/Protected.jsx';
+import Seller from '../Components/Seller.jsx';
+import SellerForm from '../Components/SellerForm.jsx';
 
 const Router = () => {
   return (
@@ -26,6 +28,9 @@ const Router = () => {
         <Route path='/services' element={<Protected Component={ServicesPage} />} />
         <Route path='/cart' element={<Protected Component={Cart} />} />
         <Route path='/dashboard' element={<Protected Component={Dashboard} />} />
+        <Route path='/seller' element={<Protected Component={Seller} />} />
+        <Route path='/sellerForm' element={<Protected Component={SellerForm} />} />
+
         <Route path='/' element={<LogIn />} />
         <Route path='/logup' element={<LogUp />} />
       </Routes>

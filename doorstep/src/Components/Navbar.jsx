@@ -25,7 +25,7 @@ const Navbar = () => {
                         <label><NavLink to='/home'>Home</NavLink></label>
                         <label><NavLink to='/services'>Services</NavLink></label>
                         <label><NavLink to='/customersupport'>Support</NavLink></label>
-                        <label><NavLink to='/customersupport'>Seller</NavLink></label>
+                        <label><NavLink to='/seller'>Seller</NavLink></label>
                     </div>
                     <div className='cart-logo' onClick={() => navigate('/cart')}>
                         <i className="fa-solid fa-cart-shopping "></i>
