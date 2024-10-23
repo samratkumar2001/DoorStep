@@ -20,7 +20,7 @@ const ProfileDropdown = () => {
             <ul className='dropDown-item-container'>
                 <div className="dropDownItem">
                     <img src={'./images/profileIcon.png'} alt='' />
-                    <li>Profile</li>
+                    <li><Link to="/admin">Admin</Link></li>
                 </div>
                 <div className="dropDownItem">
                     <img src={CartIcon} alt='' />
