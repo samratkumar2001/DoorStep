@@ -35,7 +35,7 @@ header a {
 }
 
 header a:hover {
-    color: #d6dbdf;
+    color: #f1c40f;
 }
 
 section {
@@ -85,7 +85,7 @@ section {
 }
 
 .contact h3 {
-    color: #5dade2;
+    color: #f1c40f;
     font-size: 20px;
 }
 
@@ -102,7 +102,7 @@ section {
 .chat i {
     font-size: 50px;
     padding-top: 40px;
-    color: #5dade2;
+    color: #f1c40f;
 }
 
 /* Section 2 CSS */
@@ -472,7 +472,7 @@ section {
 
 .team-member h5 {
     font-size: 1em;
-    color: #666;
+    color: #f1c40f;
     margin-bottom: 10px;
 }
 

@@ -6,6 +6,7 @@ import HomeCards from './HomeCards'
 import ProfileDropdown from './ProfileDropdown'
 import { NavLink,useNavigate } from 'react-router-dom'
 import Logo from '../Images/logo.png'
+import title from '../Images/title.png'
 import SearchLogo from '../Images/search-b.png'
 
 
@@ -19,7 +20,7 @@ const Navbar = () => {
             <nav>
                 <span className='components'>
                     <div className='logo'>
-                        <img src={Logo} />
+                        <img src={title} />
                     </div>
                     <div className='links'>
                         <label><NavLink to='/home'>Home</NavLink></label>

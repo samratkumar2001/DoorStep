@@ -91,7 +91,7 @@ const HomeCards = () => {
       <hr className='homecards-hr' />
 
       {/* Service Conatiner  */}
-      <h1 style={{ marginLeft: "20px", marginTop:"20px"}}>Variety Of Services</h1>
+      <h1 style={{ marginLeft: "20px", marginTop:"20px"}}>Variety of Services</h1>
       <div className="service-cont">
       <div className='service-container'>
 

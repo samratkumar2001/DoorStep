@@ -9,7 +9,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     float: left;
     width: 20vh;
-    height: 95vh;
+    height: auto;
 }
 
 .side-nav-options li{
@@ -25,7 +25,7 @@
 
 .dash-info{
     width: auto;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,6 +74,7 @@
 
 
 .right-big-box{
+  /* background-color: red; */
     width: 70vh;
     overflow: hidden;
     margin-left: 10%;
@@ -137,7 +138,7 @@ table {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-right: 5vh;
-    height: 40vh;
+    height: 55vh;
   }
 
   .add-nav ul{

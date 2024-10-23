@@ -5,7 +5,7 @@ const DoorstepModel = require("./models/Doorstep");
 const app = express()
 app.use(express.json())
 app.use(cors())
-mongoose.connect("mongodb://127.0.0.1:27017/Doorstep")
+mongoose.connect("mongodb://localhost:27017/Doorstep")
 app.post('/signup', (req,res) => {
     DoorstepModel.create(req.body)
     .then(Doorstep => res.json(Doorstep))
