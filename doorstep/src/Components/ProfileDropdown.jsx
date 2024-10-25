@@ -30,7 +30,7 @@ const ProfileDropdown = () => {
                 </div>
                 <div className="dropDownItem">
                     <img src={DashboardIcon} alt='' />
-                    <li><a href='/dashboard'>Dashboard</a></li>
+                    <li><Link to='/dashboard'>Dashboard</Link></li>
                 </div>
                 {/* <div className="dropDownItem">
                     <img src={SettingsIcon} alt='' />
@@ -38,7 +38,7 @@ const ProfileDropdown = () => {
                 </div> */}
                 <div className="dropDownItem">
                     <img src={CustomersupportIcon} alt='' />
-                    <li><a href='/customersupport'>Help</a></li>
+                    <li><Link to='/customersupport'>Help</Link></li>
                 </div>
                 <div className="dropDownItem">
                     <img src={LogoutIcon} alt='' />

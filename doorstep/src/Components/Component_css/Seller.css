@@ -1,6 +1,7 @@
 .seller {
   /* background-color: #f9e9a7; */
   display: flex;
+  /* gap: 5rem; */
   align-items: center;
   width: 100%;
   height: auto;
@@ -8,18 +9,27 @@
 }
 
 .photo {
-  margin-top: 5vh;
+  height: 60vh;
+  width: 100rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  /* margin-top: 5vh; */
+  /* background-color: red; */
 }
 
 .photo img {
-  width: 60vh;
-  height: auto;
-  margin-left: 15%;
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
+  /* height: auto; */
+  /* margin-left: 1rem; */
   /* filter:drop-shadow(5px 5px red); */
 }
 
 .content {
-  margin-left: 5rem;
+  /* background-color: red; */
+  width: 320vh;
+  margin-left: 1rem;
   font-weight: 200;
   font-size: 20px;
   margin-top: 2vh;
@@ -37,7 +47,7 @@
 }
 
 .seller .content {
-  max-width: 70vh;
+  /* max-width: 70vh; */
 }
 
 .cta-form {
@@ -88,9 +98,10 @@
 
 .features ul {
   /* background-color: red; */
+  margin-right: 5rem;
 
   list-style-type: none;
-  margin-left: 15vh;
+  margin-left: 1rem;
   z-index: 1000000;
   margin-top: 4vh;
 
@@ -133,7 +144,7 @@
 
 .info {
   /* background-color: red; */
-  margin-left: 5%;
+  margin-left: 1rem;
   margin-right: 1%;
   margin-top: 5vh;
   font-family: "Poppins", sans-serif;

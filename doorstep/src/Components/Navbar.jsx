@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+// import { useNavigate } from "react-router-dom";
 import './Component_css/Navbar.css'
 import Avatar from '../Images/avatar.png'
 import CustomerSupport from './CustomerSupport'
@@ -15,11 +16,16 @@ const Navbar = () => {
     const navigate = useNavigate();
     const [openProfile,setOpenProfie] = useState(false);
 
+    const handleClick = () =>{
+        navigate("/home");
+
+    }
+
     return (
         <div className='Nav-wrapper'>
             <nav>
                 <span className='components'>
-                    <div className='logo'>
+                    <div className='logo' title='DoorStep' onClick={handleClick}>
                         <img src={title} />
                     </div>
                     <div className='links'>
@@ -36,7 +42,8 @@ const Navbar = () => {
                         <input type='text' placeholder='Search' />
                         <img src={SearchLogo} alt='search' className='search-icon' />
                     </div>
-                    <button className='components-login-btn' onClick={() => setOpenProfie((prev) => !prev)}>Login</button>
+                    <img className="nav-avatar" src='/images/nav-avatar.png' onClick={() => setOpenProfie((prev) => !prev)}/>
+                    {/* <button className='components-login-btn' onClick={() => setOpenProfie((prev) => !prev)}>Login</button> */}
                 </span>
                 {
                     openProfile && <ProfileDropdown/>

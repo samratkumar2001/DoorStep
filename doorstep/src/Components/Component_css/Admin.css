@@ -28,6 +28,7 @@
 
 .admin-stats {
     background-color: white;
+    border: 1px solid black;
     height: 12vh;
     width: 20vw;
     border-radius: 10px;
@@ -70,6 +71,9 @@
 .admin-services {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
+    margin-inline: .5rem;
+    border-radius: 5px;
+    background: transparent;
 }
 
 .admin-table {

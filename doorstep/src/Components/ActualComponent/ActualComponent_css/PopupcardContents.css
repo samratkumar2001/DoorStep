@@ -1,16 +1,20 @@
 .popupcardcontents-container{
     background-color: white;
-    height: 35vh;
+    height: 20vh;
     width: 100%;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
 }
+
 .popupcardcontents-dp{
     /* background-color: red; */
-    height: 25vh;
-    width: 25vh;
+    height: 80%;
+    width: 25%;
     margin: auto;
     border-radius: 10px;
     overflow: hidden;
@@ -33,13 +37,14 @@
 }
 
 .popupcardcontents-data .name{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 800;
 
 }
 
 .sales-data-conatiner{
-    background-color: #d6dbdf;
+    /* background-color: #d6dbdf; */
+    border: 2px solid black;
     height: auto;
     width: 100%;
     border-radius: 10px;
@@ -49,9 +54,16 @@
     justify-content: center;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
     margin-bottom: 1rem;
     
+}
+
+.popupcardcontents-data .loaction{
+    border-left: 2px solid black;
+    /* float: right; */
+    margin-left: 1rem;
+    padding-left: 1rem;
 }
 .popupcardcontents-btn{
     /* background-color: yellow; */
@@ -62,21 +74,21 @@
 }
 
 .popupcardcontents-btn button{
-    padding: .5rem 1.5rem;
+    padding: .2rem 1rem;
     border-radius: 5px;
     font-family: "Outfit", sans-serif;
     font-size: 15px;
     /* background-color: #1f618d; */
 }
-.popupcardcontents-btn .follow{
-    border: 2px solid #1f618d ;
+.popupcardcontents-btn .call{
+    border: 2px solid #f1c40f ;
     background-color: white;
-    color: #1f618d ;
+    color: #f1c40f ;
     cursor: pointer;
 }
 .popupcardcontents-btn .book{
     border: none;
-    background-color: #1f618d;
-    color: white;
+    background-color: #f1c40f;
+    color: black;
     cursor: pointer;
 }

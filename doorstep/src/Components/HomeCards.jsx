@@ -91,88 +91,90 @@ const HomeCards = () => {
       <hr className='homecards-hr' />
 
       {/* Service Conatiner  */}
-      <h1 style={{ marginLeft: "20px", marginTop:"20px"}}>Variety of Services</h1>
+      <h1 style={{ marginLeft: "20px", marginTop: "20px" }}>Variety of Services</h1>
       <div className="service-cont">
-      <div className='service-container'>
+        <div className='service-container'>
 
-        <div className='services'>
-          <img src={CleaningServices} />
-          <div>Cleaning Services</div>
-        </div>
-        <div className='services'>
-          <img src={CarpetcleaningServices} />
-          <div>Carpet Cleaning</div>
-        </div>
-        <div className='services'>
-          <img src={ComputerrepairServices} />
-          <div>Computer Repair</div>
-        </div>
-        <div className='services'>
-          <img src={ElectricianServices} />
-          <div>Electrician Services</div>
-        </div>
-        <div className='services'>
-          <img src={EventplanningServices} />
-          <div>Event Planning</div>
-        </div>
-        <div className='services'>
-          <img src={FitnessServices} />
-          <div>Fitness Services</div>
-        </div>
-        <div className='services'>
-          <img src={GraphicdesignServices} />
-          <div>Graphic Design</div>
-        </div>
-        <div className='services'>
-          <img src={HandymanServices} />
-          <div>Handyman Services</div>
-        </div>
-        <div className='services'>
-          <img src={InteriordesignServices} />
-          <div>Interior Design</div>
-        </div>
-        <div className='services'>
-          <img src={LawncareServices} />
-          <div>Lawncare</div>
-        </div>
-        <div className='services'>
-          <img src={LegalServices} />
-          <div>Legal Services</div>
-        </div>
-        <div className='services'>
-          <img src={MessagetherapyServices} />
-          <div>Message Therapy</div>
-        </div>
-        <div className='services'>
-          <img src={MovingServices} />
-          <div>Moving Services</div>
-        </div>
-        <div className='services'>
-          <img src={PhotographyServices} />
-          <div>Photography</div>
-        </div>
-        <div className='services'>
-          <img src={PaintingServices} />
-          <div>Planting Services</div>
-        </div>
-        <div className='services'>
-          <img src={PlumbingServices} />
-          <div>Plumbing Services</div>
-        </div>
-        <div className='services'>
-          <img src={TutorServices} />
-          <div>Tutor Services</div>
-        </div>
-        <div className='services' onClick={() => navigate('/services')}  >
-          <img src={MoreServices} />
-          <div>More..</div>
-        </div>
+          <div className='services'>
+            <img src={CleaningServices} />
+            <div>Cleaning Services</div>
+          </div>
+          <div className='services'>
+            <img src={CarpetcleaningServices} />
+            <div>Carpet Cleaning</div>
+          </div>
+          <div className='services'>
+            <img src={ComputerrepairServices} />
+            <div>Computer Repair</div>
+          </div>
+          <div className='services'>
+            <img src={ElectricianServices} />
+            <div>Electrician Services</div>
+          </div>
+          <div className='services'>
+            <img src={EventplanningServices} />
+            <div>Event Planning</div>
+          </div>
+          <div className='services'>
+            <img src={FitnessServices} />
+            <div>Fitness Services</div>
+          </div>
+          <div className='services'>
+            <img src={GraphicdesignServices} />
+            <div>Graphic Design</div>
+          </div>
+          <div className='services'>
+            <img src={HandymanServices} />
+            <div>Handyman Services</div>
+          </div>
+          <div className='services'>
+            <img src={InteriordesignServices} />
+            <div>Interior Design</div>
+          </div>
+          <div className='services'>
+            <img src={LawncareServices} />
+            <div>Lawncare</div>
+          </div>
+          <div className='services'>
+            <img src={LegalServices} />
+            <div>Legal Services</div>
+          </div>
+          <div className='services'>
+            <img src={MessagetherapyServices} />
+            <div>Message Therapy</div>
+          </div>
+          <div className='services'>
+            <img src={MovingServices} />
+            <div>Moving Services</div>
+          </div>
+          <div className='services'>
+            <img src={PhotographyServices} />
+            <div>Photography Services</div>
+          </div>
+          <div className='services'>
+            <img src={PaintingServices} />
+            <div>Planting Services</div>
+          </div>
+          <div className='services'>
+            <img src={PlumbingServices} />
+            <div>Plumbing Services</div>
+          </div>
+          <div className='services'>
+            <img src={TutorServices} />
+            <div>Tutor Services</div>
+          </div>
+          <div className='services' onClick={() => navigate('/services')}  >
+            <img src={MoreServices} />
+            <div>More..</div>
+          </div>
         </div>
       </div>
 
 
       <hr className='homecards-hr' />
-      <h1 style={{ marginLeft: "23px", marginTop:"20px"}}>Similar Services</h1>
+
+
+      <h1 style={{ marginLeft: "23px", marginTop: "20px" }}>Similar Services</h1>
       {/* Suggestion Conatiner  */}
       <div className='suggestion-container'>
 
@@ -217,7 +219,7 @@ const HomeCards = () => {
 
       {/* Popular Section */}
 
-      <div className='popular-container1'style={{ marginTop:"20px"}}>
+      <div className='popular-container1' style={{ marginTop: "20px" }}>
         <h1 style={{ marginLeft: "3px", paddingBottom: "4vh" }}>Popular Services</h1>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -225,7 +227,7 @@ const HomeCards = () => {
           slidesPerView={5}
           navigation
           autoplay={{
-            delay: 1000,
+            delay: 8000,
             disableOnInteraction: false,
           }}
           speed={600}
@@ -256,18 +258,18 @@ const HomeCards = () => {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide><Card imageSrc="/images/Personal Chef.jpg" name="Personal Chef" desc="Enjoy gourmet meals prepared by a professional chef at home." /></SwiperSlide>
-          <SwiperSlide><Card imageSrc="/images/Lawn Care Services.jpg" name="Lawn Care Services" desc="Keep your lawn healthy and well-maintained." /></SwiperSlide>
-          <SwiperSlide><Card imageSrc="/images/Painting Services.jpg" name="Painting Services" desc="Intexterior painting services for homes and businesses." /></SwiperSlide>
-          <SwiperSlide><Card imageSrc="/images/Event Planning.jpg" name="Event Planning" desc="Plan and organize memorable events with professional assistance." /></SwiperSlide>
-          <SwiperSlide><Card imageSrc="/images/Tutoring Services.jpg" name="Tutoring Services" desc="Personalized tutoring to help you excel academically." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Personal Chef.jpg" name="Personal Chef" desc="Enjoy meals prepared by a professional chef at home." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Lawn Care Services.jpg" name="Lawn Care" desc="Keep your lawn healthy and well-maintained." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Painting Services.jpg" name="Painting" desc="Painting services for homes and businesses." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Event Planning.jpg" name="Event Planning" desc="Plan and organize events with professionals." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Tutoring Services.jpg" name="Tutoring Services" desc="Personalized tutoring to help academically." /></SwiperSlide>
           <SwiperSlide><Card imageSrc="/images/Fitness Training.jpg" name="Fitness Training" desc="Personalized fitness plans and training sessions." /></SwiperSlide>
-          <SwiperSlide><Card imageSrc="/images/Legal Services.jpg" name="Legal Services" desc="Legal advice and services from experienced professionals." /></SwiperSlide>
-          <SwiperSlide><Card imageSrc="/images/Yoga Classes.jpg" name="Yoga Classes" desc="Practice yoga and improve your physical and mental well-being." /></SwiperSlide>
-          <SwiperSlide><Card imageSrc="/images/Car Repair Services.jpg" name="Car Repair Services" desc="Expert repair and maintenance for your vehicle." /></SwiperSlide>
-          <SwiperSlide><Card imageSrc="/images/Music Lessons.jpg" name="Music Lessons" desc="Learn to play an instrument or improve your musical skills." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Legal Services.jpg" name="Legal Services" desc="Legal advice and services from professionals." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Yoga Classes.jpg" name="Yoga Classes" desc="Improve your physical and mental well-being." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Car Repair Services.jpg" name="Car Repair" desc="Expert repair and maintenance for vehicle." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Music Lessons.jpg" name="Music Lessons" desc="Learn to improve your musical skills." /></SwiperSlide>
           <SwiperSlide><Card imageSrc="/images/Carpet Cleaning.jpg" name="Carpet Cleaning" desc="Deep cleaning solutions for carpets and rugs." /></SwiperSlide>
-          <SwiperSlide><Card imageSrc="/images/Personal Stylist.jpg" name="Personal Stylist" desc="Receive personalized fashion advice and styling services." /></SwiperSlide>
+          <SwiperSlide><Card imageSrc="/images/Personal Stylist.jpg" name="Personal Stylist" desc="Personalized fashion and styling services." /></SwiperSlide>
 
         </Swiper>
       </div>
@@ -275,7 +277,7 @@ const HomeCards = () => {
       {/* <hr className='homecards-hr' /> */}
 
       {/* <div className='bisection'> */}
-        {/* <div className='bisection-left'>
+      {/* <div className='bisection-left'>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={0}
@@ -289,20 +291,20 @@ const HomeCards = () => {
 
 
 
-            {/* // pagination={{ clickable: true }}
+      {/* // pagination={{ clickable: true }}
           //   onSlideChange={() => console.log('slide change')}
           //   onSwiper={(swiper) => console.log(swiper)} */}
-          {/* > */}
-            {/* <SwiperSlide><HomePopularCard img={ServicesHandyman} desc={'Handyman'} /></SwiperSlide>
+      {/* > */}
+      {/* <SwiperSlide><HomePopularCard img={ServicesHandyman} desc={'Handyman'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesLegalServices} desc={'Legal Services'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={HousecleaningCards} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesLawncare} desc={'Lawncare'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesComputerRepair} desc={'ComputerRepair'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={HousecleaningCards} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesMessageTherapy} desc={'Message Therapy'} /></SwiperSlide> */}
-          {/* </Swiper>
+      {/* </Swiper>
         </div> */}
-        {/* <div className='bisection-right'>
+      {/* <div className='bisection-right'>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={0}
@@ -316,19 +318,19 @@ const HomeCards = () => {
 
 
 
-            {/* // pagination={{ clickable: true }}
+      {/* // pagination={{ clickable: true }}
           //   onSlideChange={() => console.log('slide change')}
           //   onSwiper={(swiper) => console.log(swiper)} */}
-          {/* > */}
-            {/* <SwiperSlide><HomePopularCard img={ServicesInteriorDesign} desc={'House Cleaning'} /></SwiperSlide>
+      {/* > */}
+      {/* <SwiperSlide><HomePopularCard img={ServicesInteriorDesign} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesPlumbing} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesMovingServices} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesPhotography} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesPainting} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={HousecleaningCards} desc={'House Cleaning'} /></SwiperSlide>
             <SwiperSlide><HomePopularCard img={ServicesElectrician} desc={'House Cleaning'} /></SwiperSlide> */}
-          {/* </Swiper> */}
-        {/* </div> */}
+      {/* </Swiper> */}
+      {/* </div> */}
 
 
 

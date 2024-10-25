@@ -4,7 +4,10 @@
     float: right;
     display: flex;
     background: white;
-    margin: 5rem;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    /* margin-bottom: 5rem; */
     width: 11rem;
     padding: 1rem;
     border-radius: 10px;
@@ -18,10 +21,11 @@
     content: '';
     position: absolute;
     background: white;
-    top: 4.3rem;
-    right: 5.4rem;
-    width: 25px;
-    height: 25px;
+    top: 4.25rem;
+    /* float: right; */
+    right: 2.7rem;
+    width: 22px;
+    height: 22px;
     transform: rotate(45deg);
     border-left: 1px solid gray;
     border-top: 1px solid gray;

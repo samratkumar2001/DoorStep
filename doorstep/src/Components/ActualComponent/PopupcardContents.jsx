@@ -7,12 +7,12 @@ const PopupcardContents = (person) => {
         <>
             <div className='popupcardcontents-container'>
                 <div className='popupcardcontents-dp'>
-                    <img src={Review1}/>
+                    <img src={person.img}/>
                 </div>
                 <div className='popupcardcontents-data'>
-                    <div className='name'>{person.name}</div>
-                    <div className='phoneno'><b>Phone No.</b> {person.phone}</div>
-                    <div className='loaction'><b>Service Location</b> {person.location}</div>
+                    <span className='name'>{person.name}</span>
+                    {/* <span className='phoneno'><b>Phone No.</b> {person.phone}</span> */}
+                    <span className='loaction'><b>Service Location:</b> {person.location}</span>
                     <div className='sales-data-conatiner'>
                         <div className='total-sales'>
                             <div>Total Sales</div>
@@ -28,7 +28,7 @@ const PopupcardContents = (person) => {
                         </div>
                     </div>
                     <div className='popupcardcontents-btn'>
-                        <button className='follow'>Follow</button>
+                        <button className='call'>Call Now</button>
                         <button className='book'>Book Now</button>
                     </div>
                 </div>

@@ -54,7 +54,8 @@ const SellerForm = () => {
             
                     </div>
                 </div>
-                <hr style={{marginTop:'7.2vh'}}></hr>
+                <br/>
+                <hr/>
     
             </div>
             <div className="passContainer" id='2' style={{marginTop:"3vh"}}>
