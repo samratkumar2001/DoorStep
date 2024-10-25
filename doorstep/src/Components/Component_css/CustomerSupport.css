@@ -49,7 +49,7 @@ section {
 #section1 {
     /* background: blue; */
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 6.8rem;
 }
 
 #section1 img {
@@ -110,7 +110,7 @@ section {
 #section2 {
     /* background: rgb(215, 242, 198); */
     height: 110vh;
-    padding-top: 10%;
+    /* padding-top: 10%; */
 
 }
 
@@ -209,7 +209,7 @@ section {
 /* Review Section */
 #section3 {
     /* background: rgb(132, 228, 245); */
-    padding-top: 8%;
+    /* padding-top: 8%; */
     height: auto;
 }
 
@@ -372,11 +372,11 @@ section {
 /* Section 4 CSS */
 
 
-#section4 {
-    padding-top: 10%;
+/* #section4 {
+    padding-top: 6rem;
     
-    /* background: rgb(254, 154, 92); */
-}
+    
+} */
 
 .top {
     height: 50vh;
@@ -404,7 +404,8 @@ section {
     height: 15rem;
     width: 40rem;
     margin: auto;
-    background: #f9f9f9;
+    background: #f9e9a7;
+    color: rgb(3, 48, 72);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

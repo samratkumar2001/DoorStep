@@ -1,28 +1,54 @@
 .services-page-container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+    width: 95%;
+    margin: auto;
+    /* padding: 2rem; */
+    /* text-align: center; */
     margin-top: 10vh;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-family: "Poppins", sans-serif;
   }
-   
+  .services-page-container .header-services{
+    background-color: #f9e9a7;
+    padding: .5rem;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .services-page-container .header-services img{
+    height: 8rem;
+    width: 8rem;
+    padding: .5rem;
+  }
+
+  .header-heading{
+    /* background-color: #002bff; */
+    margin-left: 1rem;
+    height: 15vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+
+  }
   .services-page-container .header-services h1 {
+    font-weight: 400;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: .5rem; */
+    
   }
  
-  .services-page-container .header-services p {
+  .services-page-container .header-services .service-p {
+    padding: 0;
     font-size: 1.2rem;
     color: #666;
-    margin-bottom: 2rem;
+    
+    /* margin-bottom: 2rem; */
   }
   
   .services-page-container .services-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
     margin-top: 2rem;
   }
     

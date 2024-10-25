@@ -1,16 +1,50 @@
 import React from 'react';
+import {useState} from 'react';
 import "../Components/Component_css/Dashboard.css";
 // import ProfileIcon from "../Images/profileIcon.png";
-import HomeIcon from "../Images/home_icon.png";
+import DashIcon from "../Images/dashboard.png";
+import dasboardusers from "../Images/dasboard-users.png";
+import dasboardproducts from "../Images/dasboard-products.png";
+import dasboardinvoice from "../Images/dasboard-invoice.png";
+import dasboardsales from "../Images/dasboard-sales.png";
+import dasboardreturn from "../Images/dasboard-return.png";
+import dasboardhelp from "../Images/dasboard-help.png";
 const Dashboard = () => {
-     const handleNavigationClick = (event) => {
-        event.preventDefault(); 
-        
+    const handleNavigationClick = (event) => {
+        event.preventDefault();
     };
+
+    const [state1, setState1] = useState(true);
+    const [state2, setState2] = useState(false);
+    const [state3, setState3] = useState(false);
+
+    const handleClicknext1 = () => {
+        setState1(false);
+        setState2(true);
+    };
+
+    const handleClickprev2 = () => {
+        setState2(false);
+        setState1(true);
+    };
+    const handleClicknext2 = () => {
+        setState2(false);
+        setState3(true);
+    };
+
+    const handleClickprev3 = () => {
+        setState3(false);
+        setState2(true);
+    };
+    
+
+   
+
+    
     return (
         <>
             <div className='dash-container'>
-               
+
                 <div className='dash-inner-container'>
                     <div className="side-nav">
                         <ul className='side-nav-options'>
@@ -26,36 +60,36 @@ const Dashboard = () => {
                         </ul>
                     </div>
                     <div className="dash-home">
-                        <ul>
-                            <img src={HomeIcon} alt='' />
-                            <li><a href='/home'>Home/</a></li>
-                            <li><a href='/dashboard'>Dashboard</a></li>
-                        </ul>
+                        <img src={DashIcon} />
+                        <p>Dashboard</p>
                     </div>
                     <div className="dash-info">
                         <div className="left-small-box">
                             <div className="box">
                                 <h3>Total Users</h3>
-                                <img src={'/images/profileIcon.png'} alt='icon' />
+                                <img src={dasboardusers} alt='icon' />
                                 <span>Active Users: 100</span>
                                 <div className='growth'>
                                     <span>+ 98%</span>
                                     <span>Last Month</span>
                                 </div>
 
+
                             </div>
                             <div className="box">
                                 <h3>Total Sales</h3>
-                                <img src={'./images/totalSales.png'} alt='icon' />
+                                <img src={dasboardsales} alt='icon' />
                                 <span>Total Sales: ₹100</span>
                                 <div className='growth'>
                                     <span>+ 81%</span>
                                     <span>Last Month</span>
                                 </div>
                             </div>
+
+                            
                             <div className="box">
                                 <h3>Available Products</h3>
-                                <img src={'./images/product.png'} alt='icon' />
+                                <img src={dasboardproducts} alt='icon' />
                                 <span>Products Available: 10</span>
                                 <div className='growth'>
                                     <span>-98%</span>
@@ -64,7 +98,7 @@ const Dashboard = () => {
                             </div>
                             <div className="box">
                                 <h3>Return Products</h3>
-                                <img src={'./images/return.png'} alt='icon' />
+                                <img src={dasboardreturn} alt='icon' />
                                 <span>Return: 19</span>
                                 <div className='growth'>
                                     <span>- 98%</span>
@@ -73,7 +107,7 @@ const Dashboard = () => {
                             </div>
                             <div className="box">
                                 <h3>Invoices</h3>
-                                <img src={'./images/bill.png'} alt='icon' />
+                                <img src={dasboardinvoice} alt='icon' />
                                 <span>Invoice Generated: 1000</span>
                                 <div className='growth'>
                                     <span>+ 98%</span>
@@ -82,7 +116,7 @@ const Dashboard = () => {
                             </div>
                             <div className="box">
                                 <h3>Customer Query</h3>
-                                <img src={'./images/technical-support.png'} alt='icon' />
+                                <img src={dasboardhelp} alt='icon' />
                                 <span>Query Request: 100</span>
                                 <div className='growth'>
                                     <span>+ 9%</span>
@@ -91,76 +125,78 @@ const Dashboard = () => {
                             </div>
                         </div>
                         <div className="right-big-box">
-                            <div>
-                                {/* <h3><a href="">Want to Add Items?</a></h3> */}
-                                {/* <div className="add-nav">
-                                    <ul>
-                                        <li><a href='#1'>Product Details</a></li>
-                                        <li><a href='#2'>Upload Image</a></li>
-                                        <li><a href='#3'>Provider Details</a></li>
-                                    </ul>
-                                </div> */}
-                                <div className='service-form'>
-                                    <div className="service-1" id='1'>
-                                        <div className="add-nav">
-                                            <ul>
-                                                <li><a href='#1'>Product Details</a></li>
-                                                <li><a href='#2'>Upload Image</a></li>
-                                                <li><a href='#3'>Provider Details</a></li>
-                                            </ul>
-                                        </div>
-                                        <h3>Product Details</h3>
-                                        <form>
-                                            <h4>Service Name: </h4>
-                                            <input placeholder='Enter Product Name: ' />
-                                            <h4>Service Location: </h4>
-                                            <input placeholder='Enter Product Name: ' />
-                                            <h4>Service Cost: </h4>
-                                            <input placeholder='Enter Service Cost: ' /><br />
-                                            <span className='next'>Next</span>
-                                        </form>
+                            <nav>
+                                <div>Product Details</div>
+                                <div className='mid-nav'>Upload Images</div>
+                                <div>Provider Details</div>
+                            </nav>
+                            
+                            <div className='right-big-box-sections'>
+                            { state1 &&(
+                                <div className='right-big-box-sections-section'>
+                                    <h3>Product Details</h3>
+                                    
+                                    <label>Service Name</label>
+                                    <div>
+                                        <input type='text' placeholder='enter name'/>
                                     </div>
-                                    <div className="service-2" id='2'>
-                                        <div className="add-nav">
-                                            <ul>
-                                                <li><a href='#1'>Service Details</a></li>
-                                                <li><a href='#2'>Upload Image</a></li>
-                                                <li><a href='#3'>Provider Details</a></li>
-                                            </ul>
-                                        </div>
-                                        <h3>Upload Images</h3>
-                                        <form>
-                                            <h4 for="image-upload">Upload Image 1:</h4>
-                                            <input type="file" id="image-upload" accept="image/*" />
-                                            <h4 for="image-upload">Upload Image 2:</h4>
-                                            <input type="file" id="image-upload" accept="image/*" />
-                                            <h4 for="image-upload">Upload Image 3:</h4>
-                                            <input type="file" id="image-upload" accept="image/*" />
-                                            <span className='next'>Next</span>
-                                        </form>
+                                    <label>Location</label>
+                                    <div>
+                                        <input type='text' placeholder='enter location'/>
                                     </div>
-                                    <div className="service-3" id='3'>
-                                    <div className="add-nav">
-                                            <ul>
-                                                <li><a href='#1'>Product Details</a></li>
-                                                <li><a href='#2'>Upload Image</a></li>
-                                                <li><a href='#3'>Provider Details</a></li>
-                                            </ul>
-                                        </div>
-                                        <h3>Provider Details</h3>
-                                        <form>
-                                            <h4>Provider Email: </h4>
-                                            <input placeholder='Enter Product Name: ' />
-                                            <h4>User Id: </h4>
-                                            <input placeholder='Enter Product Name: ' />
-                                            <h4>Location: </h4>
-                                            <input placeholder='Enter Service Cost: ' /><br />
-                                            <span className='next'>Submit</span>
-                                        </form>
+                                    <label>Service Cost</label>
+                                    <div>
+                                        <input type='text' placeholder='enter cost'/>
                                     </div>
 
-                                </div>
+                                    <button type='button' id='product-nxt' onClick={handleClicknext1}>NEXT</button>
+                                </div>)}
+
+
+                                { state2 &&(<div className='right-big-box-sections-section'>
+                                    <h3>Upload Images</h3>
+                                    
+                                    <label>Upload Image 1</label>
+                                    <div>
+                                        <input type='file'/>
+                                    </div>
+                                    <label>Upload Image 2</label>
+                                    <div>
+                                    <input type='file'/>
+                                    </div>
+                                    <label>Upload Image 3</label>
+                                    <div>
+                                    <input type='file'/>
+                                    </div>
+                                    <button type='button' id='upload-prev' onClick={handleClickprev2}>BACK</button>
+                                    <button type='button' id='upload-nxt' onClick={handleClicknext2}>NEXT</button>
+                                    
+                                </div>)}
+
+                                { state3 &&(<div className='right-big-box-sections-section'>
+                                    <h3>Provider Details</h3>
+                                    
+                                    <label>Provider Email</label>
+                                    <div>
+                                        <input type='email' placeholder='enter email'/>
+                                    </div>
+                                    <label>Phone No.</label>
+                                    <div>
+                                        <input type='text' placeholder='enter phone no'/>
+                                    </div>
+                                    <label>Location</label>
+                                    <div>
+                                        <input type='text' placeholder='enter location'/>
+                                    </div>
+                                    <button type='button' id='provider-prev' onClick={handleClickprev3}>BACK</button>
+                                    <button type='button'>SUBMIT</button>
+                                    
+                                </div>)}
+                            
+
                             </div>
+
+                            
                         </div>
                     </div>
                 </div>

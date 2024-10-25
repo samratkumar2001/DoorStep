@@ -4,6 +4,7 @@ import SettingsIcon from "../Images/settingsIcon.png";
 import LogoutIcon from "../Images/logoutIcon.png";
 import DashboardIcon from "../Images/dashboardIcon.png";
 import CartIcon from "../Images/cartIcon.png";
+import ProfileIcon from "../Images/profileIcon.png";
 import { Link } from 'react-router-dom';
 import CustomersupportIcon from "../Images/cussupportIcon.png";
 const ProfileDropdown = () => {
@@ -19,7 +20,7 @@ const ProfileDropdown = () => {
         <div className='dropDown-container'>
             <ul className='dropDown-item-container'>
                 <div className="dropDownItem">
-                    <img src={'./images/profileIcon.png'} alt='' />
+                    <img src={ProfileIcon} alt='' />
                     <li><Link to="/admin">Admin</Link></li>
                 </div>
                 <div className="dropDownItem">
@@ -31,10 +32,10 @@ const ProfileDropdown = () => {
                     <img src={DashboardIcon} alt='' />
                     <li><a href='/dashboard'>Dashboard</a></li>
                 </div>
-                <div className="dropDownItem">
+                {/* <div className="dropDownItem">
                     <img src={SettingsIcon} alt='' />
                     <li>Settings</li>
-                </div>
+                </div> */}
                 <div className="dropDownItem">
                     <img src={CustomersupportIcon} alt='' />
                     <li><a href='/customersupport'>Help</a></li>

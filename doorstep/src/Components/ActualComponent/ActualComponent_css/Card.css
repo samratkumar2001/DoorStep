@@ -5,16 +5,21 @@
   background-color: #f4f4f4;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 102%;
   max-width: 300px;
+  height: 39vh;
   margin: auto;
   overflow: hidden;
   position: relative; /* Ensures absolute children are positioned correctly */
   transition: transform 0.3s ease;
+  margin-top: 1vh;
+  margin-left: 1vh;
+  margin-bottom: 1vh;
+  height: 53vh;
 }
 
 .service-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   cursor: pointer;
 }
 
@@ -41,7 +46,7 @@
   font-size: 1rem;
   color: #666;
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 2px;
 }
 
 /* App button */

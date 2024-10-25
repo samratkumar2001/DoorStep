@@ -7,7 +7,7 @@ const Seller = () => {
   const features = [
     { title: "Service Listing Management", icon: "/images/task.png" },
     { title: "Performance Analytics", icon: "/images/performanceAnalytics.png" },
-    { title: "Interaction Tools", icon: "/images/interaction.png" },
+    { title: "Various Interaction Tools", icon: "/images/interaction.png" },
     { title: "24/7 Seller Support", icon: "/images/technical-support.png" }
   ];
   const navigate = useNavigate();
@@ -43,6 +43,8 @@ const Seller = () => {
           </ul>
         </div>
       </div>
+
+      {/* Info Section */}
       <div className="info">
         <h1>Your journey on DoorStep</h1>
         <p>Starting your online business with DoorStep is easy.
@@ -65,12 +67,12 @@ const Seller = () => {
           <div className="step1">
             <img src="/images/ListItems.jpg" alt="" />
             <h3>List</h3>
-            <p>List your products (min 1 no.) that you want to sell on Flipkart.</p>
+            <p>List your products (min 1 no.) that you want to sell on DoorStep.</p>
           </div>
           <div className="step1">
             <img src="/images/order.jpg" alt="" />
             <h3>Orders</h3>
-            <p>Receive orders from over 45 crore+ Flipkart customers.</p></div>
+            <p>Receive orders from over 45 crore+ DoorStep customers.</p></div>
           <div className="step1">
             <img src="/images/Shippment.jpg" alt="" />
             <h3>Shipment</h3>

@@ -1,9 +1,10 @@
 .seller {
-  /* background-color: red; */
+  /* background-color: #f9e9a7; */
   display: flex;
   align-items: center;
   width: 100%;
   height: auto;
+  font-family: "Poppins", sans-serif;
 }
 
 .photo {
@@ -14,6 +15,7 @@
   width: 60vh;
   height: auto;
   margin-left: 15%;
+  /* filter:drop-shadow(5px 5px red); */
 }
 
 .content {
@@ -30,6 +32,7 @@
 
 .content p {
   line-height: 1.6;
+  font-weight: 300;
 
 }
 
@@ -42,6 +45,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 .cta-form input {
@@ -53,27 +57,37 @@
   margin-right: 10px;
   outline: none;
   margin-top: 1.5rem;
+  
 }
 
 .cta-form button {
   padding: 12px 20px;
   margin-top: 1.5rem;
   font-size: 1.1rem;
-  color: #fff;
+  color: black;
   /* background-color: #007bff; */
-  background: #5EDDCB;
-  background: linear-gradient(180deg, #e74c3c, #f1c40f);
+  background: #f1c40f;
+  /* border: 3px solid #f1c40f; */
   border: none;
+  /* background: linear-gradient(180deg, #e74c3c, #f1c40f); */
+
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  /* transition: background-color 0.3s ease; */
 }
 
 .cta-form button:hover {
-  background-color: #0056b3;
+  /* background-color: #f4d24c; */
+  /* border: 3px solid #f1c40f; */
 }
 
+.features li p{
+  font-size: 18px;
+}
+
+
 .features ul {
+  /* background-color: red; */
 
   list-style-type: none;
   margin-left: 15vh;
@@ -83,17 +97,21 @@
 }
 
 .features li {
+  background-color: #f9e9a7;
+  /* background-color: #f1c40f; */
   justify-content: space-between;
   margin-bottom: 5vh;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.416);
   cursor: pointer;
   height: 10vh;
-  width: 30vh;
+  width: 20vw;
   align-items: center;
   justify-content: center;
   padding: .5rem;
   display: flex;
   border-radius: 10px;
+
 }
 
 
@@ -102,6 +120,8 @@
   width: 8vh;
   margin-left: 1rem;
   height: 8vh;
+  /* padding-inline: 1rem; */
+ 
 
 }
 
@@ -116,14 +136,16 @@
   margin-left: 5%;
   margin-right: 1%;
   margin-top: 5vh;
+  font-family: "Poppins", sans-serif;
 
 }
 
 .info p {
   margin-top: 1rem;
   font-size: 1.3rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.6;
+  font-size: 20px;
 }
 
 .steps {
@@ -155,4 +177,7 @@
 
 .step1 h3 {
   font-size: 25px;
+  color: #e67e22;
+  /* -webkit-text-stroke: .5px black; */
+  /* text-shadow: 2px 2px 4px #000000; */
 }

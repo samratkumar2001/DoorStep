@@ -5,13 +5,15 @@ import ServicesCarpetCleaning from '../Images/Services-CarpetCleaning.jpg'
 import ServicesComputerRepair from '../Images/Services-ComputerRepair.jpg'
 import ServicesLawncare from '../Images/Services-Lawncare.jpg'
 import ServicesPhotography from '../Images/Services-Photography.jpg'
+import cartheaderlogo from '../Images/cart-header-logo.png'
 
 const Cart = () => {
     return (
-        <>
+        <div>
             <div className='cart-conatiner'>
                 <div className='shopping-cart-container'>
-                    <div className='shopping-cart-container-heading'>Shopping Cart</div>
+                    <img src={cartheaderlogo}/>
+                    <span className='shopping-cart-container-heading'>Shopping Cart</span>
 
                     <hr className='cart-hr' />
 
@@ -115,7 +117,7 @@ const Cart = () => {
                 </div>
 
             </div>
-        </>
+        </div>
     )
 }
 

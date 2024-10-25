@@ -42,7 +42,14 @@
     display: flex;
     padding: 0.5rem;
 }
-.dropDown-container li:hover{
-    transform: scale(1.2);
-    transition: transform 0.3s ease-in-out;
+
+.dropDown-container .dropDown-item-container .dropDownItem{
+    transition: .3s;
+    border-radius: 10px;
+}
+.dropDown-container .dropDown-item-container .dropDownItem:hover{
+    background-color: #f1c40f;
+    /* border-radius: 10px; */
+    /* transform: scale(1.2); */
+    /* transition: transform 0.3s ease-in-out; */
 }
