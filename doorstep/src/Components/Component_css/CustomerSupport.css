@@ -75,8 +75,9 @@ section {
     margin: auto;
     border-radius: 10px;
     text-align: center;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     font-family: "Outfit", sans-serif;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
 }
 
@@ -152,9 +153,10 @@ section {
     height: 35vh;
     width: 40vh;
     border-radius: 10px;
-    border: 1px solid #aeb6bf;
+    /* border: 1px solid #aeb6bf; */
     transition: .5s;
     cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .help-container .help-card {
@@ -237,11 +239,12 @@ section {
 }
 
 .review-container .review-card {
-    background-color: #e5e7e9;
+    background-color: #f9e9a7;
     height: 15vh;
     width: 100%;
     align-items: center;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .review-dp-container {
@@ -352,7 +355,7 @@ section {
     border: none;
     padding: 15px;
     border-radius: 15px;
-    background-color: white; ;
+    background-color: #f1c40f; ;
     color: black;
     font-size: 15px;
     transition: .5s;
@@ -360,8 +363,8 @@ section {
 
 .review-submit-button:hover {
     /* background-color:rgb(0, 255, 153); */
-    background: #5EDDCB;
-    background: linear-gradient(180deg, #07e98b, #00e1e9);
+    background: #f1c40f;
+    /* background: linear-gradient(180deg, #07e98b, #00e1e9); */
     color: whitesmoke;
 
     cursor: pointer;
@@ -408,7 +411,7 @@ section {
     color: rgb(3, 48, 72);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .about-us-content h1,
@@ -453,7 +456,7 @@ section {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     text-align: center;
     background-color: #fff;
 }
@@ -479,11 +482,12 @@ section {
 
 .our-mission {
     height: 20vh;
-    width: 100%;
+    width: 95%;
     /* background-color: red; */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-top: 30px;
+    margin-inline: auto;
 }
 
 .our-mission h2,
@@ -493,9 +497,16 @@ p {
 
 .our-mission h2 {
     font-size: 1.5em;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #000;
-    padding-bottom: 5px;
+    margin-bottom: .5rem;
+    /* margin-top: .5rem; */
+    /* border-bottom: 2px solid #000; */
+    padding-top: .5rem;
+}
+
+.our-mission hr{
+    width: 98%;
+    margin-inline: auto;
+    margin-bottom: .5rem;
 }
 
 .our-mission p {

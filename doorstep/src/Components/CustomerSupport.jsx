@@ -273,6 +273,7 @@ const CustomerSupport = () => {
 
                     <section className="our-mission">
                         <h2>Our Mission</h2>
+                        <hr/>
                         <p>
                             Our mission is to empower communities by delivering top-quality services that enhance daily life. We are dedicated to creating lasting value for our customers, employees, and partners through a culture of excellence and innovation.
                         </p>
